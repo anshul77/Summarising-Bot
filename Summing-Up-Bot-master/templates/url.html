@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<style>
+	img{opacity: 0.2;
+	filter: alpha(opacity=20);}</style>
+<link rel="stylesheet" type="text/css" href="/static/url.css">
+ <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+</head>
+<body>
+<h1>
+<div class="topnav">
+  <a href="/index">Speech</a>
+  <a href="/reg2">Url</a>
+    <a href="/reg3">Input Text</a>
+ </div></h1>
+
+
+<form class="form-signin" method="POST" action ='/templates'>
+
+  <input type="text" name="input_text" id="inputName" class="form-control" placeholder=" Enter url address here" required autofocus><br/>
+
+<div class="url">
+<input type="submit" class="btn btn-lg  btn-block"></input></div></div>
+</form>
+<p>{{ output_summary }}</p>
+</body>
+</html>

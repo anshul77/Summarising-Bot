@@ -1,0 +1,14 @@
+<form method="POST" action ='/templates'>
+    <p>Enter the text you wish to summarize:</p>
+				<textarea maxlength = "50000" name = "input_text" id = "input_text" style="width:600px; 
+				height:250px" value = "{{request.form['input_text']}}" ></textarea>
+<p>
+					<input type="submit"  class="btn btn-success btn-md" value="Submit">
+				</p>
+				<h4>Summazrized Text: </h4>
+				<textbox name="output_text" id="output_text" maxlength="50000" style="width:600px; 
+				height:250px">
+						<p>{{ output_summary }}</p>
+				</textbox>
+			<br>
+			</form>
